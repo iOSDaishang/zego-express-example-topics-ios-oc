@@ -56,12 +56,23 @@ CGFloat const ZGVideoTalkStreamViewSpacing = 8.f;
 @property (nonatomic, assign) BOOL muteSpeaker;
 @property (weak, nonatomic) IBOutlet UISwitch *speakerSwitch;
 
+///是否切换前后置摄像头按钮 true 前置  false 后置
+@property (nonatomic, assign) BOOL isFront;
+
 @end
 
 @implementation ZGVideoTalkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //切换前后置摄像头按钮
+    self.isFront = true;
+    UIButton *switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    switchBtn.frame = CGRectMake(0, 0, 30, 30);
+    switchBtn.backgroundColor = [UIColor redColor];
+    [switchBtn addTarget:self action:@selector(switchBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:switchBtn];
     
     self.roomID = @"VideoTalkRoom-1";
     
@@ -80,6 +91,12 @@ CGFloat const ZGVideoTalkStreamViewSpacing = 8.f;
     [self createEngine];
     
     [self joinTalkRoom];
+}
+
+//切换前后置摄像头
+- (void)switchBtnClick {
+    [[ZegoExpressEngine sharedEngine] useFrontCamera:self.isFront];
+    self.isFront = !self.isFront;
 }
 
 - (void)setupUI {
@@ -111,7 +128,7 @@ CGFloat const ZGVideoTalkStreamViewSpacing = 8.f;
     [[ZegoExpressEngine sharedEngine] loginRoom:_roomID user:[ZegoUser userWithUserID:_localUserID]];
     
     // Set the publish video configuration
-    [[ZegoExpressEngine sharedEngine] setVideoConfig:[ZegoVideoConfig configWithPreset:ZegoVideoConfigPreset720P]];
+    [[ZegoExpressEngine sharedEngine] setVideoConfig:[ZegoVideoConfig configWithPreset:ZegoVideoConfigPreset360P]];
     
     // Get the local user's preview view and start preview
     ZegoCanvas *previewCanvas = [ZegoCanvas canvasWithView:self.localUserViewObject.view];
@@ -182,7 +199,17 @@ CGFloat const ZGVideoTalkStreamViewSpacing = 8.f;
         CGFloat y = viewSpacing + row * (playViewHeight + viewSpacing);
         obj.view.frame = CGRectMake(x, y, playViewWidth, playViewHeight);
         
-        [self.containerView addSubview:obj.view];
+        //远端调整为大窗口
+        if (i == 1) {
+            obj.view.frame = self.containerView.bounds;
+            [self.containerView addSubview:obj.view];
+            [self.containerView sendSubviewToBack:obj.view];
+        }else {
+            [self.containerView addSubview:obj.view];
+            [self.containerView bringSubviewToFront:obj.view];
+        }
+        
+        
         i++;
     }
 }

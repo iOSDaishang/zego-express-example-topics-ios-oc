@@ -14,14 +14,14 @@
 + (unsigned int)appID {
 // for example:
 //     return 1234567890;
-    return <#Fill in your own AppID#>;
+    return 928464678;
 }
 
 // Apply AppID and AppSign from Zego
 + (NSString *)appSign {
 // for example:
 //     return @"abcdefghijklmnopqrstuvwzyv123456789abcdefghijklmnopqrstuvwzyz123";
-    return <#Fill in your own AppSign#>;
+    return @"2a485d1d1fe964eb7255d3c65ab1131fc8ad374a12231a1c7566827912096770";
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4183BCC224C0587E0088319A /* ZGVideoTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4183BCC124C0587E0088319A /* ZGVideoTalkViewController.m */; };
 		8608C3AE23631EDB00CE367B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608C3AD23631EDB00CE367B /* AppDelegate.m */; };
 		8608C3B923631EDC00CE367B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8608C3B823631EDC00CE367B /* Assets.xcassets */; };
 		8608C3BC23631EDC00CE367B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8608C3BA23631EDC00CE367B /* LaunchScreen.storyboard */; };
@@ -73,7 +74,6 @@
 		8684966623BCA08500AE7A58 /* ZGCustomVideoRenderPublishStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684966523BCA08500AE7A58 /* ZGCustomVideoRenderPublishStreamViewController.m */; };
 		8684966923BCA09300AE7A58 /* ZGCustomVideoRenderPlayStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684966823BCA09300AE7A58 /* ZGCustomVideoRenderPlayStreamViewController.m */; };
 		86A502722369719900D51012 /* VideoTalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A502712369719900D51012 /* VideoTalk.storyboard */; };
-		86A50278236976C200D51012 /* ZGVideoTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A50277236976C200D51012 /* ZGVideoTalkViewController.m */; };
 		86AA7AB0237BDB7000B2D31E /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867BBD082376E002008F7D4F /* Bugly.framework */; };
 		86AA7AB1237BDB7300B2D31E /* SSZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8608C3FF2363245900CE367B /* SSZipArchive.framework */; };
 		86AD330B249787E8004A0D1F /* ZGAudioMixingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86AD330A249787E8004A0D1F /* ZGAudioMixingViewController.m */; };
@@ -119,6 +119,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4183BCC124C0587E0088319A /* ZGVideoTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGVideoTalkViewController.m; sourceTree = "<group>"; };
 		8608C3A923631EDB00CE367B /* ZegoExpressExample-iOS-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZegoExpressExample-iOS-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8608C3AC23631EDB00CE367B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8608C3AD23631EDB00CE367B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -238,7 +239,6 @@
 		8684966823BCA09300AE7A58 /* ZGCustomVideoRenderPlayStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCustomVideoRenderPlayStreamViewController.m; sourceTree = "<group>"; };
 		86A502712369719900D51012 /* VideoTalk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideoTalk.storyboard; sourceTree = "<group>"; };
 		86A50276236976C200D51012 /* ZGVideoTalkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGVideoTalkViewController.h; sourceTree = "<group>"; };
-		86A50277236976C200D51012 /* ZGVideoTalkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGVideoTalkViewController.m; sourceTree = "<group>"; };
 		86AD3309249787E8004A0D1F /* ZGAudioMixingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioMixingViewController.h; sourceTree = "<group>"; };
 		86AD330A249787E8004A0D1F /* ZGAudioMixingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioMixingViewController.m; sourceTree = "<group>"; };
 		86AD330F24978BD3004A0D1F /* ZGAudioMixingSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioMixingSettingTableViewController.h; sourceTree = "<group>"; };
@@ -419,7 +419,7 @@
 			children = (
 				86A502712369719900D51012 /* VideoTalk.storyboard */,
 				86A50276236976C200D51012 /* ZGVideoTalkViewController.h */,
-				86A50277236976C200D51012 /* ZGVideoTalkViewController.m */,
+				4183BCC124C0587E0088319A /* ZGVideoTalkViewController.m */,
 				867DB305239E712000072B3F /* ZGVideoTalkViewObject.h */,
 				867DB306239E712000072B3F /* ZGVideoTalkViewObject.m */,
 			);
@@ -871,7 +871,6 @@
 				8608C4282363245900CE367B /* MBProgressHUD.m in Sources */,
 				8608C44F2363246600CE367B /* ZGJsonHelper.m in Sources */,
 				865A5F4723B370DC001BB0F4 /* ZGMediaPlayerViewController.m in Sources */,
-				86A50278236976C200D51012 /* ZGVideoTalkViewController.m in Sources */,
 				86E90C9924AB1B9A00507352 /* ZGPlayStreamSettingTableViewController.m in Sources */,
 				867DB307239E712000072B3F /* ZGVideoTalkViewObject.m in Sources */,
 				86EB8A9C2480AA1A0042D256 /* ZGPublishStreamSettingTableViewController.m in Sources */,
@@ -902,6 +901,7 @@
 				861376332387B79600C30486 /* ZGRoomMessageViewController.m in Sources */,
 				8608C3E52363244A00CE367B /* ZegoLogView.m in Sources */,
 				8684966623BCA08500AE7A58 /* ZGCustomVideoRenderPublishStreamViewController.m in Sources */,
+				4183BCC224C0587E0088319A /* ZGVideoTalkViewController.m in Sources */,
 				86B6E55A2395223600078757 /* ZGSoundLevelTableViewCell.m in Sources */,
 				8684965D23BC9FE600AE7A58 /* ZGCustomVideoRenderLoginViewController.m in Sources */,
 				86B6E5582395223600078757 /* ZGSoundLevelViewController.m in Sources */,
@@ -1052,10 +1052,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 200701;
-				DEVELOPMENT_TEAM = B82BHJ5H89;
+				DEVELOPMENT_TEAM = 5459N9W32M;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1071,9 +1071,9 @@
 				);
 				MARKETING_VERSION = 1.10.0;
 				OBJROOT = DerivedData/Build/Intermediates.noindex;
-				PRODUCT_BUNDLE_IDENTIFIER = "im.zego.ZegoExpressExample-iOS-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medialab.zego;
 				PRODUCT_NAME = "ZegoExpressExample-iOS-OC";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = medialab_develop;
 				SYMROOT = DerivedData/Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1083,10 +1083,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 200701;
-				DEVELOPMENT_TEAM = B82BHJ5H89;
+				DEVELOPMENT_TEAM = 5459N9W32M;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1102,9 +1102,9 @@
 				);
 				MARKETING_VERSION = 1.10.0;
 				OBJROOT = DerivedData/Build/Intermediates.noindex;
-				PRODUCT_BUNDLE_IDENTIFIER = "im.zego.ZegoExpressExample-iOS-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.medialab.zego;
 				PRODUCT_NAME = "ZegoExpressExample-iOS-OC";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = medialab_develop;
 				SYMROOT = DerivedData/Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
